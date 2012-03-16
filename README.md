@@ -1,5 +1,5 @@
 # ActiveRecord with Ruby
-This is a basic implementation of using ActiveRecord outside of Rails, in this case, with a plain Ruby script.
+This is a basic implementation of using ActiveRecord outside of Rails. In this case, in a plain Ruby script.
 
 This implementation is using an external database.yml file, as Rails does, without the environments.
 
