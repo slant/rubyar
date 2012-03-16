@@ -3,15 +3,21 @@ This is a basic implementation of using ActiveRecord outside of Rails. In this c
 
 This implementation is using an external database.yml file, as Rails does, without the environments.
 
-## Create the database and users table
+## Setup
+
+### Installing gems
+
+    gem install active_record mysql
+
+### Create the database and users table
 These instructions are assuming that you are using the settings specified in my default database.yml. For the love of all that is holy, please do not use this configuration in any production anywhere.
 
     $ mysqladmin -u root create rubyrb
     $ mysql -u root rubyrb
     mysql> CREATE TABLE users (id INT PRIMARY KEY UNIQUE AUTO_INCREMENT, name VARCHAR(255));
 
-
 ## Running the script
+
     $ ruby rubyar.rb
 
 ## Expected output
