@@ -1,0 +1,5 @@
+adapter: mysql
+database: rubyar
+username: root
+password:
+host: localhost
