@@ -12,7 +12,7 @@ These instructions are assuming that you are using the settings specified in my 
 
 
 ## Running the script
-$ ruby rubyar.rb
+    $ ruby rubyar.rb
 
 ## Expected output
 The script will prompt you to enter your name. A User record will be created using the name entered. If no name is entered, it will simply skip that step. After this, it will output a count and a comma-separated list of names currently in the database.
