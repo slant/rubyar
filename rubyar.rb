@@ -6,7 +6,7 @@ require 'logger'
 dbconfig = YAML::load(File.open('database.yml'))
 ActiveRecord::Base.establish_connection(dbconfig)
 #ActiveRecord::Base.logger = Logger.new(STDERR)
-ActiveRecord::Base.logger = Logger.new(File.open('database.log', 'a'))
+#ActiveRecord::Base.logger = Logger.new(File.open('database.log', 'a'))
 
 class User < ActiveRecord::Base
 end
