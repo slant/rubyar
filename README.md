@@ -1,5 +1,5 @@
 # ActiveRecord with Ruby
-This is a basic implementation of using ActiveRecord outside of Rails. In this case, in a plain Ruby script.
+This is a basic implementation of using ActiveRecord outside of Rails. In this case, in a Ruby script.
 
 This implementation is using an external database.yml file, as Rails does, without the environments.
 
@@ -20,9 +20,11 @@ The script will prompt you to enter your name. A User record will be created usi
 ## Logging and Debugging
 
 If you wish to see output from the queries inline, uncomment the fllowing line:
+
     ActiveRecord::Base.logger = Logger.new(STDERR)
 
 If you want this output in a separate file, uncomment this one:
+
     ActiveRecord::Base.logger = Logger.new(File.open('database.log', 'a'))
 
 ## Pull requests
